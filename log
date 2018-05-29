@@ -1,0 +1,284 @@
+Started by user Потамошнев Дмитрий Алексеевич
+[EnvInject] - Loading node environment variables.
+Building in workspace /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://scm.fss.ibs.ru:7990/scm/fss/arm-compensation.git # timeout=10
+Fetching upstream changes from http://scm.fss.ibs.ru:7990/scm/fss/arm-compensation.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://scm.fss.ibs.ru:7990/scm/fss/arm-compensation.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/develop^{commit} # timeout=10
+Checking out Revision 76244b2593fb4f550a6459c92dae4989d0235013 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 76244b2593fb4f550a6459c92dae4989d0235013
+Commit message: "Вернул РР"
+ > git rev-list 76244b2593fb4f550a6459c92dae4989d0235013 # timeout=10
+No emails were triggered.
+[ARM_COMPENSATION_DEV] $ /u01/app/apache-maven-3.3.9/bin/mvn clean package
+[INFO] Scanning for projects...
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/arm/parent/fss-util-arm-parent/2.7.3-SNAPSHOT/maven-metadata.xml
+624/624 B   
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/arm/parent/fss-util-arm-parent/2.7.3-SNAPSHOT/maven-metadata.xml (624 B at 6.1 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/parent/ibs-util-parent/2.7.3-SNAPSHOT/maven-metadata.xml
+612/612 B   
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/parent/ibs-util-parent/2.7.3-SNAPSHOT/maven-metadata.xml (612 B at 14.6 KB/sec)
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for ru.fss.arm.cmp:fss-arm-cmp-web:war:1.4.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ ru.fss.arm.cmp:fss-arm-cmp-web:[unknown-version], /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-web/pom.xml, line 198, column 29
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] fss-arm-cmp-modules
+[INFO] fss-arm-cmp-dao
+[INFO] fss-arm-cmp-service
+[INFO] fss-arm-cmp
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building fss-arm-cmp-modules 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fss-arm-cmp-modules ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building fss-arm-cmp-dao 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dao/ibs-util-dao/2.7.3-SNAPSHOT/maven-metadata.xml
+995/995 B   
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dao/ibs-util-dao/2.7.3-SNAPSHOT/maven-metadata.xml (995 B at 29.4 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dao/hibernate/ibs-util-dao-hibernate/2.7.3-SNAPSHOT/maven-metadata.xml
+1015/1015 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dao/hibernate/ibs-util-dao-hibernate/2.7.3-SNAPSHOT/maven-metadata.xml (1015 B at 25.4 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/common/ibs-util-common/2.7.3-SNAPSHOT/maven-metadata.xml
+1001/1001 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/common/ibs-util-common/2.7.3-SNAPSHOT/maven-metadata.xml (1001 B at 29.6 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-dao/2.7.3-SNAPSHOT/maven-metadata.xml
+999/999 B     
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-dao/2.7.3-SNAPSHOT/maven-metadata.xml (999 B at 31.5 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-modules/2.7.3-SNAPSHOT/maven-metadata.xml
+614/614 B   
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-modules/2.7.3-SNAPSHOT/maven-metadata.xml (614 B at 19.3 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-dao/2.7.3-SNAPSHOT/maven-metadata.xml
+1009/1009 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-dao/2.7.3-SNAPSHOT/maven-metadata.xml (1009 B at 32.8 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-modules/2.7.3-SNAPSHOT/maven-metadata.xml
+624/624 B     
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-modules/2.7.3-SNAPSHOT/maven-metadata.xml (624 B at 20.3 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/attachment/fss-util-attachment/2.7.3-SNAPSHOT/maven-metadata.xml
+1009/1009 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/attachment/fss-util-attachment/2.7.3-SNAPSHOT/maven-metadata.xml (1009 B at 24.0 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fss-arm-cmp-dao ---
+[INFO] Deleting /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ fss-arm-cmp-dao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ fss-arm-cmp-dao ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 246 source files to /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/target/classes
+[WARNING] /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/src/main/java/ru/fss/arm/cmp/dao/request/provision/order/impl/CmpTranCompensClcDaoImpl.java: /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/src/main/java/ru/fss/arm/cmp/dao/request/provision/order/impl/CmpTranCompensClcDaoImpl.java uses unchecked or unsafe operations.
+[WARNING] /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/src/main/java/ru/fss/arm/cmp/dao/request/provision/order/impl/CmpTranCompensClcDaoImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ fss-arm-cmp-dao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ fss-arm-cmp-dao ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ fss-arm-cmp-dao ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ fss-arm-cmp-dao ---
+[INFO] Building jar: /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-dao/target/fss-arm-cmp-dao-1.4.0-SNAPSHOT.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building fss-arm-cmp-service 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/service/ibs-util-service/2.7.3-SNAPSHOT/maven-metadata.xml
+1003/1003 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/service/ibs-util-service/2.7.3-SNAPSHOT/maven-metadata.xml (1003 B at 30.6 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dto/ibs-util-dto/2.7.3-SNAPSHOT/maven-metadata.xml
+995/995 B     
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dto/ibs-util-dto/2.7.3-SNAPSHOT/maven-metadata.xml (995 B at 26.3 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-service/2.7.3-SNAPSHOT/maven-metadata.xml
+1003/1003 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-service/2.7.3-SNAPSHOT/maven-metadata.xml (1003 B at 28.0 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-service/2.7.3-SNAPSHOT/maven-metadata.xml
+1013/1013 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-service/2.7.3-SNAPSHOT/maven-metadata.xml (1013 B at 21.5 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fss-arm-cmp-service ---
+[INFO] Deleting /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-service/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ fss-arm-cmp-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ fss-arm-cmp-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 261 source files to /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-service/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ fss-arm-cmp-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ fss-arm-cmp-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ fss-arm-cmp-service ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ fss-arm-cmp-service ---
+[INFO] Building jar: /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-service/target/fss-arm-cmp-service-1.4.0-SNAPSHOT.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building fss-arm-cmp 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/controller/ibs-util-controller/2.7.3-SNAPSHOT/maven-metadata.xml
+1009/1009 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/controller/ibs-util-controller/2.7.3-SNAPSHOT/maven-metadata.xml (1009 B at 7.9 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/excel/ibs-util-excel/2.7.3-SNAPSHOT/maven-metadata.xml
+999/999 B     
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/excel/ibs-util-excel/2.7.3-SNAPSHOT/maven-metadata.xml (999 B at 20.3 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/reports/ibs-util-reports/2.7.3-SNAPSHOT/maven-metadata.xml
+788/788 B   
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/reports/ibs-util-reports/2.7.3-SNAPSHOT/maven-metadata.xml (788 B at 13.7 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/arm/attachment/fss-util-arm-attachment/2.7.3-SNAPSHOT/maven-metadata.xml
+1021/1021 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/arm/attachment/fss-util-arm-attachment/2.7.3-SNAPSHOT/maven-metadata.xml (1021 B at 32.2 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/attachment/ibs-util-attachment/2.7.3-SNAPSHOT/maven-metadata.xml
+1009/1009 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/attachment/ibs-util-attachment/2.7.3-SNAPSHOT/maven-metadata.xml (1009 B at 5.2 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/service/registry/fss-util-service-registry/2.7.3-SNAPSHOT/maven-metadata.xml
+2/2 KB        
+         
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/service/registry/fss-util-service-registry/2.7.3-SNAPSHOT/maven-metadata.xml (2 KB at 33.4 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/arm/security/fss-util-arm-security/2.7.3-SNAPSHOT/maven-metadata.xml
+1017/1017 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/util/arm/security/fss-util-arm-security/2.7.3-SNAPSHOT/maven-metadata.xml (1017 B at 25.5 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/security/ibs-util-security/2.7.3-SNAPSHOT/maven-metadata.xml
+790/790 B     
+[WARNING] Checksum validation failed, expected 2866e6681fb8eed083c7ba3c318b2a9aa77d307f but is 0d389c8f679f6aefa62f49e7f5a6a3dff4648599 for http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/security/ibs-util-security/2.7.3-SNAPSHOT/maven-metadata.xml
+790/790 B   
+[WARNING] Could not validate integrity of download from http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/security/ibs-util-security/2.7.3-SNAPSHOT/maven-metadata.xml: Checksum validation failed, expected 2866e6681fb8eed083c7ba3c318b2a9aa77d307f but is 0d389c8f679f6aefa62f49e7f5a6a3dff4648599
+[WARNING] Checksum validation failed, expected 2866e6681fb8eed083c7ba3c318b2a9aa77d307f but is 0d389c8f679f6aefa62f49e7f5a6a3dff4648599 for http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/security/ibs-util-security/2.7.3-SNAPSHOT/maven-metadata.xml
+            
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/security/ibs-util-security/2.7.3-SNAPSHOT/maven-metadata.xml (790 B at 14.0 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/common/fss-util-common-dicselector-fias/2.7.3-SNAPSHOT/maven-metadata.xml
+1017/1017 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/fss/common/fss-util-common-dicselector-fias/2.7.3-SNAPSHOT/maven-metadata.xml (1017 B at 22.6 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dao/hibernate/ibs-util-dao-hibernate-security/2.7.3-SNAPSHOT/maven-metadata.xml
+1/1 KB        
+         
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/ibs/util/dao/hibernate/ibs-util-dao-hibernate-security/2.7.3-SNAPSHOT/maven-metadata.xml (1 KB at 32.3 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-controller/2.7.3-SNAPSHOT/maven-metadata.xml
+1006/1006 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/nsi/fss-util-nsi-controller/2.7.3-SNAPSHOT/maven-metadata.xml (1006 B at 30.7 KB/sec)
+Downloading: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-controller/2.7.3-SNAPSHOT/maven-metadata.xml
+1016/1016 B   
+              
+Downloaded: http://217.74.37.148:8081/nexus/content/repositories/fss-central-snapshot/ru/fss/util/selector/fss-util-selector-controller/2.7.3-SNAPSHOT/maven-metadata.xml (1016 B at 33.1 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ fss-arm-cmp-web ---
+[INFO] Deleting /u01/app/jenkins/home/.jenkins/workspace/ARM_COMPENSATION_DEV/fss-arm-cmp-web/src/main/webapp (includes = [**/*], excludes = [**/WEB-INF/*, **/WEB-INF/spring/*, **/WEB-INF/lib/*])
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:exec (sencha-app-clean-FssArmCmp) @ fss-arm-cmp-web ---
+Sencha Cmd v6.2.2.36
+[INF] Processing Build Descriptor : default
+[WRN] Failed to resolve package util-ibs-client-widget-lib@1.1.36
+[WRN] Failed to resolve package util-ibs-client-widget-fias@1.0.16
+[WRN] Failed to resolve package util-client-widget-arm-crud@1.1.2
+[WRN] Failed to resolve package util-client-widget-arm-fileupload@1.1.2
+[WRN] Failed to resolve package util-client-widget-select@1.1.3
+[ERR] Cannot satisfy requirements for "util-client-widget-arm-crud"!
+[ERR]    The following versions cannot be satisfied:
+[ERR]       fss-util-nsi: util-client-widget-arm-crud@1.1.2 (No matches!)
+[ERR] Cannot resolve package requirements
+[ERROR] Command execution failed.
+org.apache.commons.exec.ExecuteException: Process exited with an error: 65 (Exit value: 65)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.codehaus.mojo.exec.ExecMojo.executeCommandLine(ExecMojo.java:804)
+	at org.codehaus.mojo.exec.ExecMojo.executeCommandLine(ExecMojo.java:751)
+	at org.codehaus.mojo.exec.ExecMojo.execute(ExecMojo.java:313)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] fss-arm-cmp-modules ................................ SUCCESS [  0.116 s]
+[INFO] fss-arm-cmp-dao .................................... SUCCESS [  3.790 s]
+[INFO] fss-arm-cmp-service ................................ SUCCESS [  1.434 s]
+[INFO] fss-arm-cmp ........................................ FAILURE [  4.326 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.372 s
+[INFO] Finished at: 2018-01-21T18:31:26+03:00
+[INFO] Final Memory: 34M/443M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.6.0:exec (sencha-app-clean-FssArmCmp) on project fss-arm-cmp-web: Command execution failed. Process exited with an error: 65 (Exit value: 65) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :fss-arm-cmp-web
+Build step 'Invoke top-level Maven targets' marked build as failure
+[PostBuildScript] - Executing post build scripts.
+[PostBuildScript] - Build does not have any of the results [SUCCESS]. Did not execute build step #0.
+
